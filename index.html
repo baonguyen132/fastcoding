@@ -16,9 +16,59 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="blog.css">
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 
 <body>
+
+    <section class="projects-section">
+        <div class="projects-header">
+            <h2 class="section-title">We build more projects<br>successful</h2>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Card 1 -->
+            <div class="project-card">
+                <div class="project-bg" style="background-image: url('data/image1.jpg');"></div>
+                <div class="project-overlay"></div>
+                <div class="project-content">
+                    <h3 class="project-title">San Francisco, California</h3>
+                    <a href="#" class="see-more-btn">See more <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="project-card">
+                <div class="project-bg" style="background-image: url('data/image1.jpg');"></div>
+                <div class="project-overlay"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Washington DC</h3>
+                    <a href="#" class="see-more-btn">See more <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="project-card">
+                <div class="project-bg" style="background-image: url('data/image1.jpg');"></div>
+                <div class="project-overlay"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Chicago</h3>
+                    <a href="#" class="see-more-btn">See more <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribe Input Box -->
+        <div class="subscribe-wrapper">
+            <form class="subscribe-form" onsubmit="event.preventDefault();">
+                <i class="fa-solid fa-envelope envelope-icon"></i>
+                <input type="email" placeholder="Enter your email here" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
 
     <section class="blog-section">
         <div class="blog-header">
@@ -108,6 +158,72 @@
 
         <div class="read-all">
             <button type="button">Read All</button>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="contact-us-header">
+            <span class="section-subtitle">Contact with us</span>
+            <h2 class="section-title">Looking For To Buy A Property?</h2>
+        </div>
+
+        <div class="contact-us-container">
+            <!-- Left Info Column -->
+            <div class="contact-info-col">
+                <p class="contact-desc">
+                    Browse our property listing and find your best and suitable home or house for sale, rent and buying.
+                    It's so easy and fast.
+                </p>
+
+                <ul class="contact-checklist">
+                    <li>
+                        <i class="fa-solid fa-check check-icon"></i>
+                        <span>Archit ecto beatae vitae dicta sunt</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check check-icon"></i>
+                        <span>Largest global RealEstate market</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-check check-icon"></i>
+                        <span>Nor again is there anyone</span>
+                    </li>
+                </ul>
+
+                <div class="contact-image-wrapper">
+                    <div class="accent-box accent-black"></div>
+                    <div class="accent-box accent-orange"></div>
+                    <div class="contact-image-card-1">
+                        <img src="data/image1.jpg" alt="Buy a Property">
+                    </div>
+                    <div class="contact-image-card-2">
+                        <img src="data/image1.jpg" alt="Buy a Property">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Contact Form Card -->
+            <div class="contact-form-card">
+                <h3 class="form-title">Contact Us</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Enter your message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>
         </div>
     </section>
 
