@@ -166,6 +166,12 @@
 
 /* Responsive */
 @media (max-width: 850px) {
+
+    .prev-btn,
+    .next-btn {
+        display: none;
+    }
+
     .testimonial-card {
         flex-direction: column;
         text-align: center;
