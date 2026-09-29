@@ -94,7 +94,7 @@
 /* Card 2: Bottom-Right main image box */
 .contact-image-card-2 {
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     right: 0;
     width: 380px;
     height: 230px;
@@ -123,8 +123,8 @@
     width: 54px;
     height: 54px;
     background-color: var(--primary-color, #FF5A3C);
-    right: 170px;
-    top: 50px;
+    right: 160px;
+    top: -10px;
     box-shadow: 0 6px 20px rgba(255, 90, 60, 0.3);
     z-index: 3;
 }
@@ -133,8 +133,8 @@
     width: 30px;
     height: 30px;
     background-color: #1E2532;
-    right: 155px;
-    top: 38px;
+    right: 145px;
+    top: -20px;
     border-radius: 6px;
     z-index: 4;
 }

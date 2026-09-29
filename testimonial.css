@@ -65,15 +65,17 @@
 }
 
 .next-btn {
-    background-color: var(--primary-color, #FF5A3C);
-    color: #FFFFFF;
-    box-shadow: 0 6px 20px rgba(255, 90, 60, 0.35);
+    background-color: #FFFFFF;
+    border: 1px solid #FFD4CC;
+    color: var(--primary-color, #FF5A3C);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .next-btn:hover {
-    background-color: #E0482B;
-    transform: translateX(3px);
-    box-shadow: 0 8px 25px rgba(255, 90, 60, 0.45);
+    background-color: var(--primary-color, #FF5A3C);
+    border-color: var(--primary-color, #FF5A3C);
+    color: #FFFFFF;
+    transform: translateX(-3px);
 }
 
 /* Card layout */
