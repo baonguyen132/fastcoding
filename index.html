@@ -24,9 +24,140 @@
     <link rel="stylesheet" href="featured.css">
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="commercial.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 
 <body>
+
+    <!-- Top Contact & Social Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-contact">
+                <span class="contact-item"><i class="fa-regular fa-envelope"></i> Info@webmail.com</span>
+                <span class="contact-item"><i class="fa-solid fa-location-dot"></i> 547 ns tower St. anglo City,
+                    USA</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header Navbar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <div class="logo-circle">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <span class="logo-text">Reanty<span class="logo-dot">.</span></span>
+            </a>
+
+            <!-- Right-side container wrapping navigation links and buttons -->
+            <div class="navbar-right">
+                <nav>
+                    <ul class="navbar-links">
+                        <li><a href="#" class="nav-link active">Home</a></li>
+                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="#" class="nav-link">Feature</a></li>
+                        <li><a href="#" class="nav-link">Market</a></li>
+                        <li><a href="#" class="nav-link">Services</a></li>
+                        <li><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="navbar-actions">
+                    <a href="#" class="login-btn">Log In</a>
+                    <a href="#" class="signup-btn">Sign Up</a>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar Backdrop Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Slide-out Mobile Sidebar Drawer (Left Slider) -->
+    <aside class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="navbar-logo">
+                <div class="logo-circle">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <span class="logo-text">Reanty<span class="logo-dot">.</span></span>
+            </a>
+            <button class="close-sidebar" id="close-sidebar" aria-label="Close Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+
+
+        <div class="sidebar-actions">
+            <ul class="sidebar-links">
+                <li><a href="#" class="sidebar-link active">Home</a></li>
+                <li><a href="#" class="sidebar-link">About</a></li>
+                <li><a href="#" class="sidebar-link">Feature</a></li>
+                <li><a href="#" class="sidebar-link">Market</a></li>
+                <li><a href="#" class="sidebar-link">Services</a></li>
+                <li><a href="#" class="sidebar-link">Contact</a></li>
+            </ul>
+
+            <div class="btn-wrapper">
+                <a href="#" class="sidebar-login">Log In</a>
+                <a href="#" class="sidebar-signup">Sign Up</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Find the best Real<br>
+                    Estate on your<br>
+                    country .
+                    <i class="fa-solid fa-arrow-turn-down swirl-arrow"></i>
+                </h1>
+                <p class="hero-desc">
+                    With over 1 million homes for sale available on the website, Renting can match you with a house.
+                </p>
+                <a href="#" class="hero-cta">Start membership <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="hero-image-col">
+                <div class="hero-image-card">
+                    <img src="data/image1.jpg" alt="Real Estate Hero">
+                </div>
+
+                <!-- Stat Card -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <span class="stat-amount">$7454.21</span>
+                    <span class="stat-label">Revenue</span>
+                </div>
+
+                <!-- How It Works Card -->
+                <div class="how-it-works-card">
+                    <span class="how-it-works-text">How it works</span>
+                    <div class="play-btn">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Section 1: Commercial Real Estate And Office -->
     <section class="commercial-section">
@@ -165,7 +296,8 @@
         <div class="services-header">
             <h2 class="section-title">Services provide for you</h2>
             <p class="section-subtitle">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration.
             </p>
         </div>
 
@@ -708,6 +840,31 @@
         <div class="footer-accent-strip"></div>
     </footer>
 
+    <!-- Mobile Sidebar Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const closeSidebar = document.getElementById('close-sidebar');
+            const sidebar = document.getElementById('mobile-sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+
+            function openMenu() {
+                if (sidebar) sidebar.classList.add('active');
+                if (overlay) overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMenu() {
+                if (sidebar) sidebar.classList.remove('active');
+                if (overlay) overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            if (menuToggle) menuToggle.addEventListener('click', openMenu);
+            if (closeSidebar) closeSidebar.addEventListener('click', closeMenu);
+            if (overlay) overlay.addEventListener('click', closeMenu);
+        });
+    </script>
 </body>
 
 </html>
