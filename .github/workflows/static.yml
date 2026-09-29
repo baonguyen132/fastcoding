@@ -2,7 +2,7 @@ name: Deploy HTML to GitHub Pages
 
 on:
   push:
-    branches: [ main ] # Chạy khi có push lên nhánh main
+    branches: [ main ]
 
 permissions:
   contents: read
@@ -11,18 +11,21 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps:deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5 # Cập nhật lên v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # Thư mục chứa file index.html của bạn
+          path: '.' # Đảm bảo file index.html nằm ở thư mục gốc của dự án
 
       - name: Deploy to GitHub Pages
         id: deployment
