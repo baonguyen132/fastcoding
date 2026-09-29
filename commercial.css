@@ -1,0 +1,360 @@
+/* Commercial Section */
+.commercial-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 40px 20px;
+    font-family: var(--font-family);
+}
+
+.commercial-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.commercial-header .section-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
+
+.commercial-header .section-subtitle {
+    font-size: 14px;
+    color: var(--text-gray);
+    max-width: 440px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.commercial-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.commercial-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 370px;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.commercial-card:hover {
+    transform: translateY(-5px);
+}
+
+.commercial-card.active-card {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.commercial-icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.commercial-card.active-card .commercial-icon-box {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.commercial-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.commercial-card.active-card .commercial-card-title {
+    color: var(--text-white);
+}
+
+.commercial-card-desc {
+    font-size: 13px;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.commercial-card.active-card .commercial-card-desc {
+    color: var(--text-white);
+    opacity: 0.95;
+}
+
+/* Dream Living Spaces Section */
+.dream-living-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 20px 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    font-family: var(--font-family);
+}
+
+.dream-image-col {
+    position: relative;
+    width: 480px;
+    height: 420px;
+    flex-shrink: 0;
+}
+
+.dream-image-offset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 380px;
+    background-color: var(--bg-gray);
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.dream-image-main {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 360px;
+    height: 360px;
+    background-color: var(--bg-gray);
+    border-radius: 16px;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.dream-image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.rating-badge {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    padding: 14px 20px;
+    border-radius: 8px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.rating-badge i {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.rating-badge span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dream-content-col {
+    flex: 1;
+    max-width: 520px;
+}
+
+.dream-content-col .section-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 14px;
+    line-height: 1.25;
+}
+
+.dream-content-col .section-subtitle {
+    font-size: 14px;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.dream-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dream-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dream-feature-item.active-feature {
+    background-color: var(--white-color);
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.feature-icon-box {
+    font-size: 24px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.feature-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.feature-desc {
+    font-size: 13px;
+    color: var(--text-gray);
+    line-height: 1.5;
+}
+
+/* Today Sells Section */
+.sells-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 60px 20px 80px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    font-family: var(--font-family);
+}
+
+.sells-info-col {
+    flex: 1;
+    max-width: 500px;
+}
+
+.sells-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.sells-info-col .section-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 14px;
+    line-height: 1.25;
+}
+
+.sells-info-col .section-subtitle {
+    font-size: 14px;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.sells-checklist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.sells-checklist li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.square-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+/* Gallery Grid on Right */
+.sells-gallery-col {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 540px;
+}
+
+.gallery-large {
+    grid-row: span 2;
+    height: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--bg-gray);
+}
+
+.gallery-small {
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--bg-gray);
+}
+
+.gallery-large img,
+.gallery-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .dream-living-section,
+    .sells-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dream-image-col,
+    .dream-content-col,
+    .sells-info-col,
+    .sells-gallery-col {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .sells-gallery-col {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-large {
+        height: 260px;
+        grid-row: auto;
+    }
+}

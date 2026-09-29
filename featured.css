@@ -1,0 +1,227 @@
+.featured-property-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    font-family: var(--font-family);
+}
+
+.featured-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.featured-title-group .section-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #1E2532;
+    margin-bottom: 10px;
+}
+
+.featured-title-group .section-subtitle {
+    font-size: 15px;
+    color: #888888;
+    max-width: 420px;
+    line-height: 1.5;
+}
+
+/* Tabs */
+.featured-tabs {
+    display: flex;
+    gap: 36px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #888888;
+    cursor: pointer;
+    font-family: inherit;
+    padding-bottom: 8px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tab-btn.active {
+    color: #1E2532;
+    font-weight: 600;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.tab-btn:hover {
+    color: var(--primary-color);
+}
+
+/* Grid Layout */
+.featured-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.featured-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 370px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 360px;
+    background-color: #D4D4D4;
+}
+
+.featured-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Floating Overlay Info Box (Bottom-Left) */
+.featured-info-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white-color);
+    padding: 16px 20px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    z-index: 2;
+}
+
+.property-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1E2532;
+    margin: 0;
+}
+
+.property-location {
+    font-size: 13px;
+    color: #888888;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.property-location i {
+    font-size: 12px;
+}
+
+.property-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1E2532;
+}
+
+.highlight-price {
+    color: var(--primary-color);
+}
+
+.card-arrow-btn {
+    position: absolute;
+    right: -48px;
+    bottom: 0;
+    width: 48px;
+    height: 48px;
+    background-color: #D9D9D9;
+    color: #1E2532;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.card-arrow-btn.active-arrow {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.card-arrow-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Explore Button */
+.explore-all {
+    display: flex;
+    justify-content: center;
+}
+
+.explore-btn {
+    padding: 14px 42px;
+    background-color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: 0 6px 20px rgba(255, 90, 60, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .featured-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .featured-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .featured-title-group .section-title {
+        font-size: 28px;
+    }
+}

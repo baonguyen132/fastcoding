@@ -1,11 +1,21 @@
 :root {
     --primary-color: #FF5A3C;
+    --primary-hover: #E0482B;
+    --primary-light: #FFEFEF;
     --bg-dark: #171B2A;
+    --bg-light: #F4F6F9;
+    --bg-gray: #E2E4E8;
+    --bg-card: #FFFFFF;
+    --text-dark: #1E2532;
     --text-white: #FFFFFF;
+    --text-gray: #888888;
     --text-muted: #8E96A7;
     --text-subtle: #5E6678;
-    --text-gray: #A0A8B9;
     --border-color: #282E44;
+    --border-light: #E8ECEF;
+    --white-color: #FFFFFF;
+    --star-gold: #FFB800;
+    --shadow-color: rgba(0, 0, 0, 0.05);
     --font-family: 'Poppins', sans-serif;
     --font-size: 14px;
 }
@@ -30,7 +40,8 @@ footer {
     width: 100%;
 }
 
-.footer-container, .blog-container{
+.footer-container,
+.blog-container {
     max-width: 1240px;
     margin: 0 auto;
     padding: 60px 30px 40px 30px;
@@ -252,4 +263,3 @@ footer {
     width: 100%;
     background-color: var(--primary-color);
 }
-
